@@ -11,7 +11,7 @@ def weatherDashboard():
 def render_results():
     zip_code = request.form['zipCode']
 
-    api_key = "34a7ee6dda364f4215900946c63d9153"
+    api_key = "39f0437c8f2e650838b190dba4c78ac7"
     data = get_weather_results(zip_code, api_key)
     temp = "{0:.2f}".format(data["main"]["temp"])
     feels_like = "{0:.2f}".format(data["main"]["feels_like"])
