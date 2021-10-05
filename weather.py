@@ -22,7 +22,7 @@ def render_results():
 
 def get_weather_results(zip_code, api_key):
     #removed {country code} because if not specified, it only defaults to USA codes
-    api_url = "http://api.openweathermap.org/data/2.5/weather?zip={}&units=imperial&appid={}".format(zip_code, api_key)
+    api_url = "https://api.openweathermap.org/data/2.5/weather?zip={}&units=imperial&appid={}".format(zip_code, api_key)
     
     #will request data and return it in JSON format
     r = requests.get(api_url)
